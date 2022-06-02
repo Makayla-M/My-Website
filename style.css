@@ -1,0 +1,324 @@
+html, body{
+  height:100%;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+
+img{
+  object-fit:fill;
+}
+
+.nav {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  position:relative;
+}
+.nav a {
+  float: left;
+  color: #5CDB95;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sidenav a:hover {
+  background-color: #5CDB95;
+  color: white;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top:10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav a.active {
+  background-color: #5CDB95;
+  color: white;
+}
+.container{
+  float:right;
+  white-space:pre-line;
+  line-height: 7px;
+  display:block;
+}
+#bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+}
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  float: right;
+}
+
+
+#main {
+  transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#name{
+  font-family: 'Smooch', monospace;
+  font-size: 24px;
+  left: 10px;
+  color:white;
+}
+
+
+.reveal h1 {
+  color:white;
+  height: min-content;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: reveal 5s ease forwards;
+}
+
+
+@keyframes reveal{
+  from{
+    width:0%;
+  }
+  to{
+    width:100%;
+  }
+}
+.reveal{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  margin-top:250px;
+}
+
+#hello{
+  font-family: "Smooch", monospace;
+  font-size: 72px;
+  z-index: 2;
+}
+
+#hello::before{
+  position:absolute;
+  left: 0;
+  top: 0;
+  text-align:center;
+  z-index: 2;
+}
+.subwrapper{
+  position:absolute;
+  width:100%;
+
+}
+
+.subtitle{
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  color:white;
+  text-align:center;
+  opacity:0;
+  animation: slide 5s ease 1s forwards;
+  z-index: 2;
+
+}
+
+
+@keyframes slide {
+  from{
+    opacity:0;
+    transform: translateY(5rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  .samwrapper{
+  display:block;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  overflow:scroll;
+  perspective: 2px;
+  perspective-origin: 0%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateZ(0px);
+  position:relative;
+}
+
+.samgradient {
+  background-image: linear-gradient(transparent, black);
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  content: " ";
+  position:absolute;
+  background-size:cover;
+  overflow:scroll;
+}
+
+.samphil{
+  width: 100%;
+  height: 100%;
+  background-size:cover; 
+}
+
+.contact{
+  overflow:hidden;
+  text-align:left;
+  background-color: black; 
+  width: 100%;
+  height: 10%;
+  position:absolute;
+  z-index:1;
+  color:white;
+}
+.contact2{
+  overflow:hidden;
+  text-align:left;
+  background-image: linear-gradient(rgba(151, 152, 156,1),black); 
+  width: 100%;
+  height: 10%;
+  position:absolute;
+  z-index:1;
+  color:black;
+}
+
+.internships{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(black, rgba(151, 152, 156,1));
+  white-space: pre-line;
+  font-family: "Source Code Pro", monospace;
+  justify-content:left;
+  color:white;
+}
+h1{
+  text-align: center;
+}
+ul{
+  list-style-type: circle;
+  list-style-position: inside;
+
+}
+
+.description{
+  height: 50px;
+  text-align:left;
+  color:white;
+}
+
+.accepted{
+  padding-bottom: 35px;
+}
+.grid{
+  height:100%;
+  width:100%;
+  display:grid;
+  background-image: linear-gradient(black, rgba(151, 152, 156,1));
+}
+.school{
+  grid-column:1;
+  color:white;
+}
+.general{
+  grid-column:2;
+  color:white;
+}
+.skills{
+  white-space:pre-line;
+  grid-column:3;
+  grid-row:1;
+  color:white;
+}
+.rhino{
+  grid-row:2;
+  color:white;
+}
+.img {
+  float:center;
+  height: 250px;
+  }
+.next {
+ 
+  }
+.previous{
+  float:left;
+  }
+
+.galcontainer{
+  overflow:scroll;
+  height:100%;
+  width:100%;
+  background-image: linear-gradient(black, rgba(151, 152, 156,1));
+}
+.gallery{
+ display:inline-block;
+  background-size: cover;
+  background-clip: text;
+  color:transparent;
+  position: relative;
+  height:150px;
+  width:150px;
+  border-radius:50%;
+}
+.soap{
+  display:block;
+  text-align:center;
+}
+
+.lamp{
+  display:block;
+  text-align:center;
+}
+#lamp{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.planter{
+  text-align:center;
+}
+
+.works{
+  display:flex;
+  background-image: linear-gradient(black,white);
+  position:relative;
+  white-space:pre-line;
+  background-color:white;
+  height:75px;
+  width:175px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  justify-content:center;
+}
+
