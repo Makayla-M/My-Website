@@ -12,16 +12,16 @@ function closeNav() {
 }
  
  function openhome(){
- window.location.href = "file:///Users/makaylamcvea/Downloads/homepage.html"
+ window.location.href = "./index.html"
 			
 }
 
 function openpai(){
- window.location.href = "file:///Users/makaylamcvea/Downloads/projects.html"
+ window.location.href = "./projects.html"
 			
 }
 function openabout(){
- window.location.href = "file:///Users/makaylamcvea/Downloads/about.html"
+ window.location.href = "./about.html"
 			
 }
 function cbutton(){
@@ -33,7 +33,7 @@ function sbutton(){
 
 
 function openrhino(){
-	window.location.href= "file:///Users/makaylamcvea/Downloads/rhino.html";
+	window.location.href= "./rhino.html";
 }
 
 
